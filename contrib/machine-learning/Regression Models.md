@@ -1,6 +1,13 @@
 # Regression Models
 Regression is a technique to examine the relationship between the Dependant variable (Y) and Independent Variables(X).
 It is a type of supervised Learning.
+There are many types of Regression models:
+1. Linear Regression Model
+2. Multiple Regression Model
+3. Logistic Regression Model
+4. Ridge Regression Model.
+5. Lasso Regression Model
+   
 In order to perform Regression, we need to split our data into training and test sets using `train_test_split` model from `sklearn.model_selection` library.
 
 Here is the explanation to create the training and test set from the dataset.
@@ -26,10 +33,9 @@ Y=df.target
 X_train,Y_train,X_test,Y_test=train_test_split(X,Y,test_size=0.30)
 ````
 
-There are many types of Regression models:
-1. Linear Regression Model
-2. Multiple Regression Model
-3. Logistic Regression Model
-4. Ridge Regression Model.
-5. Lasso Regression Model
+## Linear Regression:
+In the linear Regression, there is one independent and one dependent variable and the relationship between them is straight line. The equation of regression line is of form y=mx+c, where m is the slope of Regression line, c is intercept, x is independent variable and y is dependent variable. Example - The CGPA being independent variable predicts the package of the student(dependent variable).
+
+## Multiple Regression:
+In the multiple Regression , there is one dependent variable(y) but many independent variables(x1,x2---xn).
    
